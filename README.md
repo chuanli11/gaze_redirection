@@ -55,6 +55,9 @@ tar -xvf vgg_16_2016_08_28.tar.gz
 
 ```Bash
 python main.py --mode train --data_path ./dataset/all/ --log_dir ./log/ --batch_size 32 --vgg_path ./vgg_16.ckpt
+
+
+python main.py --mode train --data /media/ubuntu/Data1/deepvoodoo/data/ColumbiaGaze/all --log_dir ./log/ --batch_size 32 --vgg_path ./vgg_16.ckpt
 ```
 
 ## Test
@@ -63,6 +66,16 @@ To test the model on frontal faces, run the following command.
 
 ```Bash
 python main.py --mode eval --data_path ./dataset/0P/ --log_dir ./log/ --batch_size 21
+
+python main.py --mode eval --data /media/ubuntu/Data1/deepvoodoo/data/ColumbiaGaze/0P --log_dir ./log/ --batch_size 16 
 ```
 
 Then, a folder named **eval** will be generated in folder **./log/**. Generated images, input images and target images will be stored in **eval/**.
+
+
+## Interpolate
+
+```
+python interpolate.py
+```
+

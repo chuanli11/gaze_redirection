@@ -12,3 +12,6 @@ dataset/
 dataset.tar
 */.ropeproject/
 .vscode/
+result*
+log*
+*.dat
